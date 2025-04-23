@@ -33,3 +33,22 @@ const resTern =
     ? "El primer valor es mayor que el segundo"
     : "El segundo valor es mayor que el primero";
 console.log(resTern);
+
+//Operadores lógicos
+
+const name = "ozzy",
+  edad = 17;
+const tieneEntrada = true;
+const tienePermiso = true;
+//and
+const permitirAcceso = edad >= 18 && tieneEntrada;
+console.log("acceso permitido: " + permitirAcceso);
+
+//or
+const permitirAccesoOr =
+  (edad >= 18 && tieneEntrada) || (tienePermiso && tieneEntrada);
+console.log("acceso permitido: " + permitirAccesoOr);
+
+//not
+const variable = true;
+console.log(!variable);
